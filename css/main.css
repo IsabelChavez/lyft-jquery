@@ -2,20 +2,18 @@
     width: 50%;
 }
 
-.color-degradiend {
-    background: linear-gradient(to bottom right, #530060, #e19);
+.splash {
+    background: linear-gradient(to bottom right, #570364, rgb(236, 26, 156));
+    height: 100vh;
 }
 
-.height-splash {
-    height: 669px;
-}
-
-.vertical-align {
+.img-splash {
     transform: translateY(150%);
 }
 
-.img-white-small {
+.logo-white  {
     width: 25%;
+    margin: 4em;
 }
 
 .city {
@@ -23,14 +21,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
-.width-100 {
-    width: 100%;
-}
-
-.margin {
-    margin: 80px 0;
+.logo-pink {
+    width: 95%;
+    margin: 8em 0;
 }
 
 .btn-sign-up {
@@ -39,7 +35,7 @@
 }
 
 .btn-sign-up:hover {
-    background: linear-gradient(to bottom right, #530060, #e19);
+    background: linear-gradient(to bottom right, #570364, rgb(236, 26, 156));
 }
 
 
