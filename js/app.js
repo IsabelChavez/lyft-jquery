@@ -1,19 +1,18 @@
 $(function () {
+    // vista splash
     setTimeout(function () {
         $('#splash').fadeOut();
         $('#city').removeClass('hide');
     }, 4000);
 });
 
-$('.button-collapse').sideNav();
-
-/* __________________Page 1________________*/
+// funcionalidad vista 1
 $('a.btn.white').click(function () {
     $('#dropdown1').toggleClass('hide');
 });
-
+// estilos contenedor de banderas
 $('#dropdown1').attr({
-    'style': 'width: 90px; position: absolute; top: 158px; left: 108px; display: block; opacity: 1'
+    'style': 'width: 7rem; position: absolute; top: 10rem; left: 4.5rem; display: block; opacity: 1'
 });
 // Habilitando boton deacuerdo al contenido
 $('#input_text').keyup(function () {
@@ -25,7 +24,7 @@ $('#input_text').keyup(function () {
         $('#next').addClass('btn-next');
     }
 });
-// Codigo aleatorio LAB-000
+// funcionalidad para el código aleatorio
 function rand_code(chars, lon) {
     code = '';
     for (x = 0; x < lon; x++) {
@@ -33,16 +32,16 @@ function rand_code(chars, lon) {
         code += chars.substr(rand, 1);
     }
     return code;
-}
-caracteres = '0123456789';
+
+characters = '0123456789';
 longitud = 3;
 // Mostrando codigo aleatorio
 $('#next').click(function () {
-    alert('Tu codigo LAB -' + rand_code(caracteres, longitud));
+    alert('Tu codigo LAB -' + rand_code(characters, longitud));
     $('#next').attr('href', 'page2.html');
 });
 
-/* __________________Page 2________________*/
+// funcionalidad pagina 2
 $('#code').keyup(function () {
     if ($('#code').val().length < 3) {
         $('#next2').addClass('disabled');
@@ -54,7 +53,7 @@ $('#code').keyup(function () {
     }
 });
 
-/* __________________Page 3________________*/
+// funcionalidad pagina 3
 $('#First-name').keyup(function () {
     if ($('#First-name').val().length < 3) {
         $('#next3').addClass('disabled');
@@ -64,6 +63,7 @@ $('#First-name').keyup(function () {
         $('#next3').addClass('btn-next');
     }
 });
+
 $('#test5').click(function () {
     if ($('input[type="checkbox"]:checked+label:before')) {
         $('#next3').removeClass('grey lighten-2 disabled');
