@@ -97,3 +97,8 @@
 .background-white {
     background-color: white;
 }
+
+.color-degradiend{
+        background: linear-gradient(to bottom right, #530060, #e19);
+        height: 100vh;
+}
