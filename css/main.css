@@ -40,7 +40,7 @@
 }
 
 /* ----------------------------- */
-/*Estilos para Page 1*/
+/*Estilos para Pagina 1 y pagina 2*/
 
 .material-icons {
     display: block;
@@ -80,8 +80,7 @@
     text-transform: capitalize;
 }
 
-
-/*Estilos Page 3*/
+/*Estilos pagina 3*/
 
 .icon-user {
     margin-top: 15px;
